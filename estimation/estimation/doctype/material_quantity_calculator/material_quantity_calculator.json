@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-14 13:00:35.521916",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "structure_calculation",
+  "finishing_calculation",
+  "waterproofing_calculation",
+  "boq_formulas_section",
+  "boq_quantity_formulas"
+ ],
+ "fields": [
+  {
+   "fieldname": "structure_calculation",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Structure Calculation",
+   "options": "Structure Calculation"
+  },
+  {
+   "fieldname": "finishing_calculation",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Finishing Calculation",
+   "options": "Finishing Calculation"
+  },
+  {
+   "fieldname": "waterproofing_calculation",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Waterproofing Calculation",
+   "options": "Waterproofing Calculation"
+  },
+  {
+   "fieldname": "boq_formulas_section",
+   "fieldtype": "Section Break",
+   "label": "BOQ Quantity Formulas"
+  },
+  {
+   "description": "Define one row per BOQ line item. Formula variables: BUA (total sq.ft), GF_BUA, FF_BUA, BUA_SQM, FLOORS, PLOT_AREA, EXT_WALL, INT_WALL, FLOOR_HEIGHT, wastage_factor_",
+   "fieldname": "boq_quantity_formulas",
+   "fieldtype": "Table",
+   "label": "BOQ Quantity Formulas",
+   "options": "BOQ Quantity Formula"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-07-02 22:51:50.860149",
+ "modified_by": "Administrator",
+ "module": "Estimation",
+ "name": "Material Quantity Calculator",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
